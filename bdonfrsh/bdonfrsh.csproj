@@ -68,7 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddPost.aspx" />
+    <Content Include="AddNewPost.aspx" />
     <Content Include="AddStudent.aspx" />
     <Content Include="AddSubject.aspx" />
     <Content Include="AdminPage.aspx" />
@@ -81,6 +81,7 @@
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="ManagePosts.aspx" />
     <Content Include="Manage_Student.aspx" />
     <Content Include="Manage_Subject.aspx" />
     <Content Include="SavingPosts.aspx" />
@@ -89,12 +90,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPost.aspx.cs">
-      <DependentUpon>AddPost.aspx</DependentUpon>
+    <Compile Include="AddNewPost.aspx.cs">
+      <DependentUpon>AddNewPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddPost.aspx.designer.cs">
-      <DependentUpon>AddPost.aspx</DependentUpon>
+    <Compile Include="AddNewPost.aspx.designer.cs">
+      <DependentUpon>AddNewPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddStudent.aspx.cs">
       <DependentUpon>AddStudent.aspx</DependentUpon>
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePosts.aspx.cs">
+      <DependentUpon>ManagePosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePosts.aspx.designer.cs">
+      <DependentUpon>ManagePosts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Manage_Student.aspx.cs">
       <DependentUpon>Manage_Student.aspx</DependentUpon>

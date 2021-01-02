@@ -11,7 +11,7 @@ namespace bdonfrsh
 {
 
 
-    public partial class AddPost
+    public partial class ManagePosts
     {
 
         /// <summary>
@@ -24,39 +24,21 @@ namespace bdonfrsh
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtPost control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPost;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// btnAdd control.
+        /// grdpost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
-
-        /// <summary>
-        /// btndel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btndel;
-
-        /// <summary>
-        /// grdDisplyPost control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdDisplyPost;
+        protected global::System.Web.UI.WebControls.GridView grdpost;
     }
 }

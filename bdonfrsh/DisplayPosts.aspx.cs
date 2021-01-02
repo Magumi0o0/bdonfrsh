@@ -21,9 +21,11 @@ namespace bdonfrsh
 
         public string GetPosts()
         {
+            
 
             DataAccessLayer dataAccessLayer = new DataAccessLayer();
             var posts = dataAccessLayer.SelectData("SELECT * FROM POSTS");
+
             for (int i = 0; i < posts.Rows.Count; i++)
             {
                 Response.Write(" <p>Posted On : " + posts.Rows[i][2].ToString() + "</p>");

@@ -43,7 +43,7 @@ namespace bdonfrsh
             dal.ExecuteCommand($"UPDATE subject SET Name = '{ Sname.Text}' , Descreption='{description.Text}'," +
                                            $" TName='{ Tname.Text}'  WHERE Id = {subjectid} ");
             dal.Close();
-            Response.Redirect("AddSubject.aspx");
+            Response.Redirect("Manage_Subject.aspx");
         }
 
         protected void btn_Delete_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace bdonfrsh
             dal.Open();
             dal.SelectData($"DELETE FROM subject WHERE Id = {subjectid}");
             dal.Close();
-            Response.Redirect("AddSubject.aspx");
+            Response.Redirect("Manage_Subject.aspx");
         }
     }
 }

@@ -4,21 +4,46 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+  <title>Add Subject</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+    
+    <div class="container">
      <form id="form1" runat="server">
-        <div>
-            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+
+       <div class="form-group">
+           <label for="name">Subject Name:</label>
+            <asp:TextBox ID="txtName" class="form-control" runat="server"></asp:TextBox>
         </div>
-        <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
-        <asp:TextBox ID="txtTname" runat="server"></asp:TextBox>
-        <br />
-        <asp:DropDownList ID="drDept" runat="server">
+
+         <div class="form-group">
+             <label for="description">Subject Description :</label>
+              <asp:TextBox ID="txtDescription" class="form-control" runat="server"></asp:TextBox>
+          </div>
+      <div class="form-group">
+              <label for="tname"> Professor Name :</label>
+        <asp:TextBox ID="txtTname" class="form-control" runat="server"></asp:TextBox>
+        </div>
+
+      <div class="form-group">
+          <label for="drdept"> Subject Dept :</label>
+        <asp:DropDownList ID="drDept" class="form-control" runat="server">
         </asp:DropDownList>
-        <p style="height: 169px; width: 758px">
-        <asp:Button ID="Add" runat="server" Text="Add" OnClick="Add_Click" />
-        </p>
+           </div>
+         
+         
+        <div  class="container">
+        <asp:Button ID="Add" class="btn btn-primary" runat="server" Text="Add" OnClick="Add_Click" />
+        </div>
     </form>
+    </div>
 </body>
 </html>

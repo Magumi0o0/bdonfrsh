@@ -10,10 +10,12 @@
     <form id="form1" runat="server">
         <div style="padding-top:100px">
             <center>
+                <p>
                 <asp:Button ID="btnAddNewStudent" runat="server" Text="Add New Student" OnClick="btnAddNewStudent_Click"></asp:Button>
-            <asp:GridView ID="grdDisplayStudents" runat="server" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None" OnRowCommand="grdDisplayStudents_RowCommand" OnSelectedIndexChanged="grdDisplayStudents_SelectedIndexChanged1">
-                <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
-                <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
+              </p>
+            <asp:GridView ID="grdDisplayStudents" runat="server"  BorderColor="#999999" BorderStyle="Ridge" BorderWidth="2px" CellPadding="5" CellSpacing="3" GridLines="None" OnRowCommand="grdDisplayStudents_RowCommand" OnSelectedIndexChanged="grdDisplayStudents_SelectedIndexChanged1">
+                <FooterStyle BackColor="#003300" ForeColor="Black" />
+                <HeaderStyle BackColor="#003300"  ForeColor="#E7E7FF" />
                 <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
                 <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
                 <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />

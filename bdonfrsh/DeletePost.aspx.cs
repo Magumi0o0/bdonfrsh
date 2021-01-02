@@ -10,6 +10,7 @@ namespace bdonfrsh
 {
     public partial class DeletePost : System.Web.UI.Page
     {
+       
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,9 +25,10 @@ namespace bdonfrsh
                 TxtDatePost.Text = post.Rows[0][2].ToString();
               
 
-                }
+            }
         }
 
+      
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             DataAccessLayer dal = new DataAccessLayer();
@@ -34,7 +36,7 @@ namespace bdonfrsh
             dal.Open();
             dal.SelectData($"DELETE FROM Posts WHERE Id = {postid}");
             dal.Close();
-            Response.Redirect("AddPost.aspx");
+            Response.Redirect("ManagePosts.aspx");
         }
     }
 }

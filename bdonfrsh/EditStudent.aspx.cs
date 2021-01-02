@@ -44,7 +44,7 @@ namespace bdonfrsh
             dal.ExecuteCommand($"UPDATE USERS SET Name = '{txtname.Text}' , Last_Name='{txtLastname.Text}',Birth='{ birthday.Value}', E_mail =  '{txtEmail.Text}' ," +
                                            $" Pass = '{txtpass.Text}'  WHERE Id = {studentId} ");
             dal.Close();
-            Response.Redirect("AddStudent.aspx");
+            Response.Redirect("Manage_Student.aspx");
         }
 
         protected void btn_delete_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace bdonfrsh
             dal.Open();
             dal.SelectData($"DELETE FROM USERS WHERE Id = {studentId}");
             dal.Close();
-            Response.Redirect("AddStudent.aspx");
+            Response.Redirect("Manage_Student.aspx");
         }
     }
 }
