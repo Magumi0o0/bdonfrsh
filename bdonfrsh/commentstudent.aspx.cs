@@ -32,6 +32,8 @@ namespace bdonfrsh
             dal.Open();
             dal.ExecuteCommand($"INSERT INTO Comment VALUES('{postId}' , '{studentid}' , '{comment}', '{sqlFormattedDate}')");
             dal.Close();
+
+            Response.Redirect("DisplayPosts.aspx");
         }
 
        

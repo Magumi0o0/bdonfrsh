@@ -75,7 +75,6 @@
     <Content Include="commentstudent.aspx" />
     <Content Include="DeletePost.aspx" />
     <Content Include="DisplayPosts.aspx" />
-    <Content Include="DisplyComment.aspx" />
     <Content Include="EditStudent.aspx" />
     <Content Include="EditSubject.aspx" />
     <Content Include="Global.asax" />
@@ -139,13 +138,6 @@
     </Compile>
     <Compile Include="DisplayPosts.aspx.designer.cs">
       <DependentUpon>DisplayPosts.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DisplyComment.aspx.cs">
-      <DependentUpon>DisplyComment.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DisplyComment.aspx.designer.cs">
-      <DependentUpon>DisplyComment.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditStudent.aspx.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
