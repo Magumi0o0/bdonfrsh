@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="commentstudent.aspx.cs" Inherits="bdonfrsh.commentstudent" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CommentStudent.aspx.cs" Inherits="bdonfrsh.commentstudent" %>
 
 <!DOCTYPE html>
 

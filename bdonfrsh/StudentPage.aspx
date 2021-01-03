@@ -19,6 +19,10 @@
              
             <a href="DisplayPosts.aspx" >DisplayPosts</a><br />
         </div>
+          <div style="text-align:center;font-size:40px">
+             
+            <a href="DisplySavingPosts.aspx" >Display Saving Posts</a><br />
+        </div>
 
         <section id="subject">
     <div class="container">

@@ -33,6 +33,7 @@ namespace bdonfrsh
                 Response.Write(" <p class='lead'>" + posts.Rows[i][1].ToString() + "</p>");
               
                 Response.Write(" <a href='commentstudent.aspx?PostId=" + posts.Rows[i][0].ToString() + "' >Comment</a>");
+               
                 Response.Write(" <a href='SavingPosts.aspx?PostId=" + posts.Rows[i][0].ToString() + "' >Save</a>");
                
                 var comments = dal.SelectData($"SELECT * FROM Comment WHERE PID = {postId}");

@@ -72,9 +72,10 @@
     <Content Include="AddStudent.aspx" />
     <Content Include="AddSubject.aspx" />
     <Content Include="AdminPage.aspx" />
-    <Content Include="commentstudent.aspx" />
+    <Content Include="CommentStudent.aspx" />
     <Content Include="DeletePost.aspx" />
     <Content Include="DisplayPosts.aspx" />
+    <Content Include="DisplySavingPosts.aspx" />
     <Content Include="EditStudent.aspx" />
     <Content Include="EditSubject.aspx" />
     <Content Include="Global.asax" />
@@ -117,12 +118,12 @@
     <Compile Include="AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="commentstudent.aspx.cs">
-      <DependentUpon>commentstudent.aspx</DependentUpon>
+    <Compile Include="CommentStudent.aspx.cs">
+      <DependentUpon>CommentStudent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="commentstudent.aspx.designer.cs">
-      <DependentUpon>commentstudent.aspx</DependentUpon>
+    <Compile Include="CommentStudent.aspx.designer.cs">
+      <DependentUpon>CommentStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="DeletePost.aspx.cs">
@@ -138,6 +139,13 @@
     </Compile>
     <Compile Include="DisplayPosts.aspx.designer.cs">
       <DependentUpon>DisplayPosts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplySavingPosts.aspx.cs">
+      <DependentUpon>DisplySavingPosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplySavingPosts.aspx.designer.cs">
+      <DependentUpon>DisplySavingPosts.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditStudent.aspx.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
