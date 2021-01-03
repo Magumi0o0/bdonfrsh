@@ -4,14 +4,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+     <title>Add Post</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+    <div class="container">
     <form id="form1" runat="server">
-        <div>
-        </div>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+
+         <div class="form-group">
+              <label  for="post">Write your post</label>
+              <asp:TextBox ID="TextBox1" class="form-control" runat="server"></asp:TextBox>
+          </div>
+
+         <div  class="container">
+           <asp:Button ID="Button1" class="btn btn-dark" runat="server" OnClick="Button1_Click" Text="Post" />
+         </div>
     </form>
+   </div>
 </body>
 </html>

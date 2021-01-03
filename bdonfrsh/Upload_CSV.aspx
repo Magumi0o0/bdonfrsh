@@ -4,24 +4,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+     <title>Add Student</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="container">
     <form id="form1" runat="server">
-        <div style="color: White;">
-            <asp:DropDownList ID="drlDept" runat="server" Height="16px" Width="184px">
-        </asp:DropDownList>
+         <div class="form-group">
 
-            <p>
+            <asp:DropDownList ID="drlDept" class="form-control" runat="server" >
+        </asp:DropDownList>
+             </div>
+            <div  class="container">
             <asp:FileUpload ID="FileUpload1" runat="server" />
-            </p>
-            <p>
-                <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
-            </p>
-            <p>
+           </div>
+           <div  class="container">
+                <asp:Button ID="btnUpload" class="btn btn-dark" runat="server" Text="Upload" OnClick="btnUpload_Click" />
+           </div>
+            <div class="form-group">
                 <asp:Label ID="message" runat="server" ForeColor="Black" />
-            </p>
-        </div>
+            </div>
+        
     </form>
+        </div>
 </body>
 </html>
