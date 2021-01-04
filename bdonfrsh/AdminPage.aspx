@@ -32,12 +32,14 @@
                 <a class="navbar-brand" href="ManagePosts.aspx">Manage Posts</a>
              </div>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a class=""input-group mb-3" href="Login.aspx" >   <button class="btn btn-dark"" type="button"> Loge Out </button></li>
+                  <li><a class=""input-group mb-3" href="Login.aspx" >   <button class="btn btn-dark"" type="button"> Log Out </button></li>
                 </ul>
           </div>
      </nav>
 
-
+         <div class="container">
+               <% this.GetPosts(); %>
+    </div>
 
   
      

@@ -16,7 +16,7 @@
 
 <body id="page-top">
      <!-- Navigation -->
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse navbar-light">
           <div class="container-fluid">
              <div class="navbar-header">
                 <a class="navbar-brand" href="AdminPage.aspx">Technical Computer College</a>
