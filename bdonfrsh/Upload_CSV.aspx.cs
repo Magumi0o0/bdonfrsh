@@ -18,10 +18,18 @@ namespace bdonfrsh
        
         protected void Page_Load(object sender, EventArgs e)
         {
+            int adminId = Convert.ToInt32(Application["adId"]);
+            int? sessionId = Convert.ToInt32(Session["UserDept"]);
+            if (sessionId == null || adminId != sessionId)
+            {
+                Response.Redirect("HomePage.aspx");
+                return;
+            }
+
             dal = new DataAccessLayer();
+
             if (!IsPostBack)
             {
-
                 var depts = dal.SelectData("Select * from Depts Where Name <> 'Admin'");
                 drlDept.DataSource = depts;
                 drlDept.DataTextField = "Name";
@@ -92,7 +100,7 @@ namespace bdonfrsh
 
         }
 
-
+        
     }
     
 }

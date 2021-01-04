@@ -13,6 +13,8 @@ namespace bdonfrsh
         DataAccessLayer dal;
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             int adminId = Convert.ToInt32(Application["adId"]);
             int? sessionId = Convert.ToInt32(Session["UserDept"]);
             if (sessionId == null || adminId != sessionId)
@@ -44,6 +46,7 @@ namespace bdonfrsh
             dal.Open();
             dal.ExecuteCommand($"INSERT INTO USERS VALUES('{UserName}' , '{LastName}' , '{Birth}' , '{Email}' , '{Password}', {DeptId})");
             dal.Close();
+            
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,7 +56,8 @@ namespace bdonfrsh
 
         protected void UploadCSV_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Upload_CSV.aspx");
         }
+
+        
     }
 }

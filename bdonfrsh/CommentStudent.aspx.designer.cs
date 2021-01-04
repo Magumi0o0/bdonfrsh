@@ -11,7 +11,7 @@ namespace bdonfrsh
 {
 
 
-    public partial class Manage
+    public partial class commentstudent
     {
 
         /// <summary>
@@ -24,30 +24,21 @@ namespace bdonfrsh
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// btnAddNewStudent control.
+        /// txtcomment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewStudent;
+        protected global::System.Web.UI.WebControls.TextBox txtcomment;
 
         /// <summary>
-        /// UploadCSV control.
+        /// btncomment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UploadCSV;
-
-        /// <summary>
-        /// grdDisplayStudents control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdDisplayStudents;
+        protected global::System.Web.UI.WebControls.Button btncomment;
     }
 }

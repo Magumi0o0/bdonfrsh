@@ -14,10 +14,33 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+
+<body id="page-top">
      
+    <!-- Navigation -->
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <a class="navbar-brand" href="AdminPage.aspx">Technical Computer College</a>
+             </div>
+              <div class="navbar-header">
+                <a class="navbar-brand" href="Manage_Student.aspx">Manage Students</a>
+             </div>
+                <div class="navbar-header">
+                <a class="navbar-brand" href="Manage_Subject.aspx">Manage Subjects</a>
+             </div>
+                <div class="navbar-header">
+                <a class="navbar-brand" href="ManagePosts.aspx">Manage Posts</a>
+             </div>
+               
+          </div>
+     </nav>
+
     <div class="container">
     <form id="form1" runat="server">
+
+         
+
       
         <div class="form-group">
           <label for="name">First Name:</label>
@@ -32,16 +55,24 @@
         <div class="form-group">
             <label for="birth">Birthday:</label>
             <input id="birthday"   class="form-control" type="text" placeholder="Birth" runat="server"  />
+            <asp:RangeValidator ID="forbirth" runat="server" ControlToValidate="birthday" ErrorMessage="Age Bettwen 18 and 30 "
+                MaximumValue="1/1/2003" MinimumValue="1/1/1991" Type="Date" ForeColor="Red"></asp:RangeValidator>
        </div>
 
        <div class="form-group">
             <label for="mail">Email:</label>
             <asp:TextBox ID="txtEmail"  class="form-control" placeholder="E_mail" runat="server" Width="506px"></asp:TextBox>
+           <asp:RegularExpressionValidator ID="formail" runat="server" ControlToValidate="txtEmail"
+                ForeColor="Red" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+               Display = "Dynamic" ErrorMessage = "Invalid email address"></asp:RegularExpressionValidator>
        </div>
 
         <div class="form-group">
              <label for="pass">Password:</label>
              <asp:TextBox ID="txtpass"  class="form-control" placeholder="Pass" runat="server" Width="508px"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="forpass" runat="server"  ControlToValidate="txtpass" 
+                ErrorMessage="Minimum password length is 6" ValidationExpression="^([a-zA-Z0-9@#$%^&+=*]{6,30})$"
+                ValidationGroup="RegisterCheck" ForeColor="Red"></asp:RegularExpressionValidator>
        </div>
 
        <div  class="container">

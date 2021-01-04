@@ -14,9 +14,31 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body id="page-top">
+     <!-- Navigation -->
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <a class="navbar-brand" href="AdminPage.aspx">Technical Computer College</a>
+             </div>
+              <div class="navbar-header">
+                <a class="navbar-brand" href="Manage_Student.aspx">Manage Students</a>
+             </div>
+                <div class="navbar-header">
+                <a class="navbar-brand" href="Manage_Subject.aspx">Manage Subjects</a>
+             </div>
+                <div class="navbar-header">
+                <a class="navbar-brand" href="ManagePosts.aspx">Manage Posts</a>
+             </div>
+                
+          </div>
+     </nav>
+
      <div class="container">
     <form id="form1" runat="server">
+
+        
+
         
          <div class="form-group">
              <label for="post">The Post:</label>

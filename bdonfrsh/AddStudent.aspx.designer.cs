@@ -33,6 +33,15 @@ namespace bdonfrsh
         protected global::System.Web.UI.WebControls.TextBox Name;
 
         /// <summary>
+        /// fornamr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator fornamr;
+
+        /// <summary>
         /// txtLastName control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace bdonfrsh
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
+
+        /// <summary>
+        /// forlastnamr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator forlastnamr;
 
         /// <summary>
         /// txtBirth control.
@@ -51,6 +69,15 @@ namespace bdonfrsh
         protected global::System.Web.UI.WebControls.TextBox txtBirth;
 
         /// <summary>
+        /// forbirth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator forbirth;
+
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -60,6 +87,24 @@ namespace bdonfrsh
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
+        /// foremail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator foremail;
+
+        /// <summary>
+        /// foremailr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator foremailr;
+
+        /// <summary>
         /// Pass control.
         /// </summary>
         /// <remarks>
@@ -67,6 +112,24 @@ namespace bdonfrsh
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Pass;
+
+        /// <summary>
+        /// forpass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator forpass;
+
+        /// <summary>
+        /// forpassr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator forpassr;
 
         /// <summary>
         /// drlDept control.
@@ -85,14 +148,5 @@ namespace bdonfrsh
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Add;
-
-        /// <summary>
-        /// UploadCSV control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UploadCSV;
     }
 }

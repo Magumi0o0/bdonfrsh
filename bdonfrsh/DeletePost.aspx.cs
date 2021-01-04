@@ -13,9 +13,15 @@ namespace bdonfrsh
        
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            if (!IsPostBack)
+            int adminId = Convert.ToInt32(Application["adId"]);
+            int? sessionId = Convert.ToInt32(Session["UserDept"]);
+            if (sessionId == null || adminId != sessionId)
             {
+                Response.Redirect("HomePage.aspx");
+                return;
+            }
+
+           
                 DataAccessLayer dal = new DataAccessLayer();
                 int postid = Convert.ToInt32(Request.QueryString.Get("Id"));
                 var post = dal.SelectData($"SELECT * FROM Posts WHERE Id = {postid}");
@@ -25,7 +31,7 @@ namespace bdonfrsh
                 TxtDatePost.Text = post.Rows[0][2].ToString();
               
 
-            }
+            
         }
 
       
@@ -36,7 +42,7 @@ namespace bdonfrsh
             dal.Open();
             dal.SelectData($"DELETE FROM Posts WHERE Id = {postid}");
             dal.Close();
-            Response.Redirect("ManagePosts.aspx");
+            Response.Redirect("AddNewPost.aspx");
         }
     }
 }

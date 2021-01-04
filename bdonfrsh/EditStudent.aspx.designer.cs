@@ -51,6 +51,15 @@ namespace bdonfrsh
         protected global::System.Web.UI.HtmlControls.HtmlInputText birthday;
 
         /// <summary>
+        /// forbirth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator forbirth;
+
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -60,6 +69,15 @@ namespace bdonfrsh
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
+        /// formail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator formail;
+
+        /// <summary>
         /// txtpass control.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace bdonfrsh
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpass;
+
+        /// <summary>
+        /// forpass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator forpass;
 
         /// <summary>
         /// btn_delete control.

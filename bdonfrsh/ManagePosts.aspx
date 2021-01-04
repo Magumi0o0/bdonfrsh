@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title>Manage Post </title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
@@ -13,7 +14,27 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body id="page-top">
+     <!-- Navigation -->
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <a class="navbar-brand" href="AdminPage.aspx">Technical Computer College</a>
+             </div>
+              <div class="navbar-header">
+                <a class="navbar-brand" href="Manage_Student.aspx">Manage Students</a>
+             </div>
+                <div class="navbar-header">
+                <a class="navbar-brand" href="Manage_Subject.aspx">Manage Subjects</a>
+             </div>
+                <div class="navbar-header">
+                <a class="navbar-brand" href="ManagePosts.aspx">Manage Posts</a>
+             </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a class=""input-group mb-3" href="Login.aspx" >   <button class="btn btn-dark"" type="button"> Loge Out </button></li>
+                </ul>
+          </div>
+     </nav>
 
     <form id="form1" runat="server">
         <div style="padding-top:100px">

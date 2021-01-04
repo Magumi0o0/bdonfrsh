@@ -12,6 +12,8 @@ namespace bdonfrsh
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             int adminId = Convert.ToInt32(Application["adId"]);
             int? sessionId = Convert.ToInt32(Session["UserDept"]);
             if (sessionId == null || adminId != sessionId)
@@ -20,8 +22,7 @@ namespace bdonfrsh
                 return;
             }
 
-            if (!IsPostBack)
-            {
+           
                 DataAccessLayer dal = new DataAccessLayer();
                 int subjectid = Convert.ToInt32(Request.QueryString.Get("Id"));
                 var subject = dal.SelectData($"SELECT * FROM subject WHERE Id = {subjectid}");
@@ -32,7 +33,7 @@ namespace bdonfrsh
                 Tname.Text = subject.Rows[0][3].ToString();
                
 
-            }
+            
         }
 
         protected void btn_Edit_Click(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace bdonfrsh
             dal.ExecuteCommand($"UPDATE subject SET Name = '{ Sname.Text}' , Descreption='{description.Text}'," +
                                            $" TName='{ Tname.Text}'  WHERE Id = {subjectid} ");
             dal.Close();
-            Response.Redirect("Manage_Subject.aspx");
+            Response.Redirect("AddSubject.aspx");
         }
 
         protected void btn_Delete_Click(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace bdonfrsh
             dal.Open();
             dal.SelectData($"DELETE FROM subject WHERE Id = {subjectid}");
             dal.Close();
-            Response.Redirect("Manage_Subject.aspx");
+            Response.Redirect("AddSubject.aspx");
         }
     }
 }

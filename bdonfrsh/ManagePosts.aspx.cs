@@ -13,6 +13,14 @@ namespace bdonfrsh
         DataAccessLayer dal;
         protected void Page_Load(object sender, EventArgs e)
         {
+            int adminId = Convert.ToInt32(Application["adId"]);
+            int? sessionId = Convert.ToInt32(Session["UserDept"]);
+            if (sessionId == null || adminId != sessionId)
+            {
+                Response.Redirect("HomePage.aspx");
+                return;
+            }
+
             if (!IsPostBack)
             {
                 dal = new DataAccessLayer();

@@ -33,13 +33,13 @@ namespace bdonfrsh
         protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator name;
 
         /// <summary>
         /// txtDescription control.
@@ -51,6 +51,15 @@ namespace bdonfrsh
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
+        /// description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator description;
+
+        /// <summary>
         /// txtTname control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace bdonfrsh
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTname;
+
+        /// <summary>
+        /// tname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tname;
 
         /// <summary>
         /// drDept control.

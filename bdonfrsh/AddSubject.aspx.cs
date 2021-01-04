@@ -13,6 +13,8 @@ namespace bdonfrsh
         DataAccessLayer dal;
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             int adminId = Convert.ToInt32(Application["adId"]);
             int? sessionId = Convert.ToInt32(Session["UserDept"]);
             if (sessionId == null || adminId != sessionId)

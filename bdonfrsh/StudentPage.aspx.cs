@@ -13,6 +13,7 @@ namespace bdonfrsh
         DataAccessLayer dal;
         protected void Page_Load(object sender, EventArgs e)
         {
+
             int Deptid = Convert.ToInt32(Session["UserDept"]);
             dal = new DataAccessLayer();
             var subiect = dal.SelectData($"select * from subject where DID = {Deptid}");

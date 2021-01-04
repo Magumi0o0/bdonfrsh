@@ -55,5 +55,11 @@ namespace bdonfrsh
         {
 
         }
+
+        protected void UploadCSV_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("Upload_CSV.aspx");
+        }
     }
 }

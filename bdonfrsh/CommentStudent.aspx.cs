@@ -5,32 +5,39 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using bdonfrsh.DAL;
-
 namespace bdonfrsh
 {
-    public partial class AddNewPost : System.Web.UI.Page
+    public partial class commentstudent : System.Web.UI.Page
     {
         DataAccessLayer dal;
         protected void Page_Load(object sender, EventArgs e)
         {
-            int adminId = Convert.ToInt32(Application["adId"]);
-            int? sessionId = Convert.ToInt32(Session["UserDept"]);
-            if (sessionId == null || adminId != sessionId)
+            if (!IsPostBack)
             {
-                Response.Redirect("HomePage.aspx");
-                return;
+
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        
+
+        protected void btncomment_Click(object sender, EventArgs e)
         {
             dal = new DataAccessLayer();
-            string Post = TextBox1.Text;
+            string postId = Request.QueryString.Get("PostId").ToString();
+            string studentid = Session["UserName"].ToString();
+            string comment = txtcomment.Text;
             DateTime CurrentTime = DateTime.Now;
             string sqlFormattedDate = CurrentTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
+
             dal.Open();
-            dal.ExecuteCommand($"INSERT INTO Posts VALUES('{Post}' , '{sqlFormattedDate}' )");
+            dal.ExecuteCommand($"INSERT INTO Comment VALUES('{postId}' , '{studentid}' , '{comment}', '{sqlFormattedDate}')");
             dal.Close();
+
+            Response.Redirect("DisplayPosts.aspx");
         }
+
+       
+
+
     }
 }

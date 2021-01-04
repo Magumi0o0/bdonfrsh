@@ -12,6 +12,8 @@ namespace bdonfrsh
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
             int adminId = Convert.ToInt32(Application["adId"]);
             int? sessionId = Convert.ToInt32(Session["UserDept"]);
             if (sessionId == null || adminId != sessionId)
@@ -20,8 +22,8 @@ namespace bdonfrsh
                 return;
             }
 
-            if (!IsPostBack)
-            {
+          
+            
                 DataAccessLayer dal = new DataAccessLayer();
                 int studentId = Convert.ToInt32(Request.QueryString.Get("Id"));
                 var student = dal.SelectData($"SELECT * FROM Users WHERE Id = {studentId}");
@@ -33,7 +35,7 @@ namespace bdonfrsh
                     txtEmail.Text = student.Rows[0][4].ToString();
                     txtpass.Text = student.Rows[0][5].ToString();
                 
-            }
+            
         }
         
         protected void btn_Edit_Click(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace bdonfrsh
             dal.ExecuteCommand($"UPDATE USERS SET Name = '{txtname.Text}' , Last_Name='{txtLastname.Text}',Birth='{ birthday.Value}', E_mail =  '{txtEmail.Text}' ," +
                                            $" Pass = '{txtpass.Text}'  WHERE Id = {studentId} ");
             dal.Close();
-            Response.Redirect("Manage_Student.aspx");
+            Response.Redirect("AddStudent.aspx");
         }
 
         protected void btn_delete_Click(object sender, EventArgs e)
@@ -55,7 +57,7 @@ namespace bdonfrsh
             dal.Open();
             dal.SelectData($"DELETE FROM USERS WHERE Id = {studentId}");
             dal.Close();
-            Response.Redirect("Manage_Student.aspx");
+            Response.Redirect("AddStudent.aspx");
         }
     }
 }
