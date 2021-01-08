@@ -34,7 +34,8 @@
       
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a class=""input-group mb-3" href="Login.aspx" >   <button class="btn btn-dark"" type="button"> Loge In </button></li>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+      <li><a class=""input-group mb-3" href="Login.aspx" >   <button class="btn btn-dark"" type="button"> Loge In</button></li>
     </ul>
   </div>
 </nav>

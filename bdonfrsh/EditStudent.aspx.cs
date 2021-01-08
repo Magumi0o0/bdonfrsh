@@ -22,20 +22,21 @@ namespace bdonfrsh
                 return;
             }
 
-          
-            
+            if (!IsPostBack)
+            {
+
                 DataAccessLayer dal = new DataAccessLayer();
                 int studentId = Convert.ToInt32(Request.QueryString.Get("Id"));
                 var student = dal.SelectData($"SELECT * FROM Users WHERE Id = {studentId}");
 
 
-                    txtname .Text = student.Rows[0][1].ToString();
-                    txtLastname.Text = student.Rows[0][2].ToString();
-                    birthday.Value = student.Rows[0][3].ToString();
-                    txtEmail.Text = student.Rows[0][4].ToString();
-                    txtpass.Text = student.Rows[0][5].ToString();
-                
-            
+                txtname.Text = student.Rows[0][1].ToString();
+                txtLastname.Text = student.Rows[0][2].ToString();
+                birthday.Value = student.Rows[0][3].ToString();
+                txtEmail.Text = student.Rows[0][4].ToString();
+                txtpass.Text = student.Rows[0][5].ToString();
+
+            }
         }
         
         protected void btn_Edit_Click(object sender, EventArgs e)

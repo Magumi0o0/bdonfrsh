@@ -19,7 +19,7 @@
       <nav class="navbar navbar-inverse">
           <div class="container-fluid">
              <div class="navbar-header">
-                <a class="navbar-brand" href="#">Technical Computer College</a>
+                <a class="navbar-brand" href="StudentPage.aspx">Technical Computer College</a>
              </div>
               <div class="navbar-header">
                 <a class="navbar-brand" href="DisplayPosts.aspx">DisplayPosts</a>

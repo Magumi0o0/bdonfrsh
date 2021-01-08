@@ -33,7 +33,7 @@ namespace bdonfrsh
                 dal.ExecuteCommand("INSERT INTO Users VALUES('ghena' , 'kalam' ,  '06/18/1999' ,'ghena@tcc.com' , '123456', " + AdminDeptId + ")");
             }
 
-             var adId = dal.SelectData("SELECT Id FROM Depts WHERE Name = 'Admin'");
+            var adId = dal.SelectData("SELECT Id FROM Depts WHERE Name = 'Admin'");
             var adIdIdRows = adId.Rows[0][0];
             Application["adId"] = adIdIdRows;
             var swId = dal.SelectData("SELECT Id FROM Depts WHERE Name = 'SOFTWARE'");
@@ -45,9 +45,9 @@ namespace bdonfrsh
             var coId = dal.SelectData("SELECT Id FROM Depts WHERE Name = 'COMPUTERS'");
             var coIdRows = coId.Rows[0][0];
             Application["coId"] = coIdRows;
-            var stId = dal.SelectData("SELECT * FROM Users WHERE DID <> '1'");
+           /* var stId = dal.SelectData("SELECT * FROM Users WHERE DID <> '1'");
             var stIdRows = stId.Rows[0][0];
-            Application["stId"] = stIdRows;
+            Application["stId"] = stIdRows;*/
             dal.Close(); 
         }
     }

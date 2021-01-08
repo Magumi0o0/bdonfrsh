@@ -22,7 +22,7 @@
       <nav class="navbar navbar-inverse navbar-light ">
           <div class="container-fluid">
              <div class="navbar-header">
-                <a class="navbar-brand" href="#">Technical Computer College</a>
+                <a class="navbar-brand" href="AdminPage.aspx">Technical Computer College</a>
              </div>
               <div class="navbar-header">
                 <a class="navbar-brand" href="Manage_Student.aspx">Manage Students</a>

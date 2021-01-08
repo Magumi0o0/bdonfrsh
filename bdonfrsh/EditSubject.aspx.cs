@@ -22,7 +22,8 @@ namespace bdonfrsh
                 return;
             }
 
-           
+            if (!IsPostBack)
+            {
                 DataAccessLayer dal = new DataAccessLayer();
                 int subjectid = Convert.ToInt32(Request.QueryString.Get("Id"));
                 var subject = dal.SelectData($"SELECT * FROM subject WHERE Id = {subjectid}");
@@ -31,8 +32,8 @@ namespace bdonfrsh
                 Sname.Text = subject.Rows[0][1].ToString();
                 description.Text = subject.Rows[0][2].ToString();
                 Tname.Text = subject.Rows[0][3].ToString();
-               
 
+            }
             
         }
 
